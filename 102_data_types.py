@@ -49,7 +49,69 @@ print(my_stringy.upper())
 # .lower() - lowercases every character
 print(my_stringy.lower())
 
-# .split() - splits the characters
-
+# .split() - splits the string into my strings and returns a list
 print(my_stringy.split())
+
+
+
+
+
+
+# Numerical data types
+# int, long, float, complex
+# These are numerical types which can use numerical operators
+
+# Complex are built with imaginary numbers.
+    # an example would be if you need to track 2 separate currencies
+    # in one variable
+
+# Long are just integers of unlimited size
+
+# Int and float
+    # int - stands for integer and is a whole number
+    # float - numbers with decimal places
+
+# int
+my_int = 10
+print(my_int)
+print(type(my_int))
+
+# float
+my_float = 10.1
+print(my_float)
+print(type(my_float))
+
+# operators - add, subtract, divide, multiply and modulus
+num1 = 12
+num2 = 21
+
+print(num1 + num2)
+print(num1 - num2)
+print(num1 / num2)
+print(num1 * num2)
+
+# modulus returns the remainder
+print(10 % 3) # it does 3 * 3 and 1 is the remainder
+
+print(20//3) # removes the decimal places
+
+
+# Comparison operators output boolean values
+    # == - equating things on both sides
+    # < / > - smaller than / bigger than
+    # <= - smaller than or equals
+    # >= - bigger than or equals
+    # != - not equal to
+    # is - will give true/false
+    # is not - will give true/false
+
+my_variable = 10
+my_variable2 = 13
+
+print(my_variable == my_variable2)
+print(my_variable == 10)
+print(my_variable < my_variable2)
+
+print(my_variable is 10)
+print(my_variable is not 10)
 
