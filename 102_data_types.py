@@ -115,3 +115,25 @@ print(my_variable < my_variable2)
 print(my_variable is 10)
 print(my_variable is not 10)
 
+# Booleans
+# true (1) or false (0)
+
+# None
+print(type(None))
+
+print(0 == None)
+
+# Operators, logical and logical Or
+a_var = True
+b_var = False
+
+# Logical and  & requires both side to be true to result in true
+print(a_var & True)
+print(a_var & False)
+
+
+# Logical or, only one side needs to be true to return true:
+print(True or False)
+
+# or = one side needs to be True to be True
+# & = both sides need to be True to be True
