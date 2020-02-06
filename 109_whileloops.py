@@ -38,6 +38,14 @@ counter = 5
 ## EXTRA TASK!
 # As a player, I should be able to exit the game using a key word,
   # so that I can stop playing
+def check(checknum):
+    return(checknum % 3 == 0)
+
+def check2(checknum2):
+    return(checknum2 % 15 == 0)
+
+def check3(checknum3):
+    return(checknum3 % 5 == 0)
 
 while True:
     num = int(input('Please input your number (type 0000 to end the game):    '))
@@ -47,15 +55,15 @@ while True:
         break
 
     while num >= count_num:
-            if count_num % 15 == 0:
+            if check2(count_num):
                 print('Fizzbuzz')
                 time.sleep(0.1)
 
-            elif count_num % 3 == 0:
+            elif check(count_num):
                 print('Fizz')
                 time.sleep(0.1)
 
-            elif count_num % 5 == 0:
+            elif check3(count_num):
                 print('Buzz')
                 time.sleep(0.1)
 
