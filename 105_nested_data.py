@@ -23,10 +23,18 @@ students_dict = {
 }
 
 # Use the list to print the individual student names
+
+item_zero = students_list[0]
+print(type(item_zero))
+print(item_zero.keys())
+print(item_zero['name'])
+
 print(student1['name']) # when taking from a list only need one []
 print(student2['name'])
 
 # Use the dictionary to print individual student names
-print(students_dict['student1']['name']) # from a dictionary you need two []
+print(students_dict['student1']['name']) # from a nested dictionary you need two []
 print(students_dict['student2']['name'])
+
+
 
