@@ -23,7 +23,7 @@ while True:
     if response.find('sensei') == -1:
         print('You are smart, but not wise - address me as Sensei please')   # checks to see if sentence begins with 'Sensei'
 
-    elif 'block' in response or 'blocking' in response:
+    elif 'block' in response:
         print('Remember, best block, not to be there.')     # if block or blocking in response, a specific reply is given
 
     elif response == 'sensei, i am at peace':
