@@ -18,20 +18,21 @@
     # --> 'Sometimes, what heart know, head forget' (DONE)
 
 while True:
-    question = input("Ask Mr. Miyagi a question:    ").lower().strip()
+    response = input("Speak to Mr. Miyagi. You can exit by saying 'Sensei, I am at peace':    ").lower().strip()  # user response
 
-    if question.find('sensei') == -1:
-        print('You are smart, but not wise - address me as Sensei please')
+    if response.find('sensei') == -1:
+        print('You are smart, but not wise - address me as Sensei please')   # checks to see if sentence begins with 'Sensei'
 
-    elif 'block' in question or 'blocking' in question:
-        print('Remember, best block, not to be there.')
+    elif 'block' in response or 'blocking' in response:
+        print('Remember, best block, not to be there.')     # if block or blocking in response, a specific reply is given
 
-    elif question == 'sensei, i am at peace':
-        print('Sometimes, what heart know, head forget')
+    elif response == 'sensei, i am at peace':
+        print('Sometimes, what heart know, head forget')   # user response breaks the loop
         break
 
-    elif question[-1] == '?':
-        print('Questions are wise, but for now. Wax on, and Wax off!')
+    elif response[-1] == '?':
+        print('Questions are wise, but for now. Wax on, and Wax off!')   # if sentence ends in '?', a specific reply is given
 
     else:
         print("Do not lose focus. Wax on. Wax off.")
+
